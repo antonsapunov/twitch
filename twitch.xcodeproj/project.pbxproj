@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1D7F69A1E9E40A2CFEA6EC /* Pods_twitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41DB4902637CFD079A94C99 /* Pods_twitch.framework */; };
 		610C85451EC30B56003874CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85441EC30B56003874CA /* AppDelegate.swift */; };
-		610C85471EC30B56003874CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85461EC30B56003874CA /* ViewController.swift */; };
-		610C854A1EC30B56003874CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610C85481EC30B56003874CA /* Main.storyboard */; };
+		610C85471EC30B56003874CA /* TopGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85461EC30B56003874CA /* TopGamesViewController.swift */; };
 		610C854C1EC30B56003874CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610C854B1EC30B56003874CA /* Assets.xcassets */; };
 		610C854F1EC30B56003874CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610C854D1EC30B56003874CA /* LaunchScreen.storyboard */; };
 		610C855A1EC30B56003874CA /* twitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85591EC30B56003874CA /* twitchTests.swift */; };
 		610C85651EC30B56003874CA /* twitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85641EC30B56003874CA /* twitchUITests.swift */; };
+		610C85731EC31998003874CA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85721EC31998003874CA /* Authentication.swift */; };
+		613D9F971EDAF336002C3841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613D9F951EDAF336002C3841 /* Main.storyboard */; };
+		613D9F991EDB0D9E002C3841 /* GameInforamtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */; };
+		6168E5B21ED6D525006D3175 /* ApiGamesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */; };
+		6168E5B51ED6DA5F006D3175 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B41ED6DA5F006D3175 /* MenuTableViewController.swift */; };
+		6168E5B91ED6DBB8006D3175 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B81ED6DBB8006D3175 /* MenuTableViewCell.swift */; };
+		6168E5BB1ED6FF90006D3175 /* GameStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5BA1ED6FF90006D3175 /* GameStreamsViewController.swift */; };
+		6168E5BF1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5BE1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift */; };
+		6168E5C11ED702E8006D3175 /* ApiStreamsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C01ED702E8006D3175 /* ApiStreamsInfo.swift */; };
+		6168E5C31ED71BD4006D3175 /* GameStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C21ED71BD4006D3175 /* GameStreams.swift */; };
+		6168E5C51ED71F4C006D3175 /* StreamInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C41ED71F4C006D3175 /* StreamInformation.swift */; };
+		617B46FB1EC98A9D008F8314 /* GamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B46FA1EC98A9D008F8314 /* GamesCollectionViewCell.swift */; };
+		617B47021ED44B05008F8314 /* twitch_logo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617B47011ED44B05008F8314 /* twitch_logo3.jpg */; };
+		617B47041ED44B95008F8314 /* TwitchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B47031ED44B95008F8314 /* TwitchInfo.swift */; };
+		617B47071ED44FBB008F8314 /* TopGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B47061ED44FBB008F8314 /* TopGames.swift */; };
+		61D26CF11ED8448800F10E93 /* TopStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D26CF01ED8448800F10E93 /* TopStreams.swift */; };
+		61D26CF41ED8456600F10E93 /* TopStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D26CF31ED8456600F10E93 /* TopStreamsViewController.swift */; };
+		61DF49771ED826A5001971DA /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF49761ED826A5001971DA /* StreamViewController.swift */; };
+		B030B17372DF3C827DB83B60 /* Pods_twitchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CF346A9E766AC80E8BBB76 /* Pods_twitchTests.framework */; };
+		CC9AE4520056F72B73B6A175 /* Pods_twitchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525BC9ECCF70CAC93F7468B /* Pods_twitchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E9764E9269BBC9C36C2ABBC /* Pods-twitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twitch/Pods-twitch.debug.xcconfig"; sourceTree = "<group>"; };
+		4525BC9ECCF70CAC93F7468B /* Pods_twitchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twitchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5778F6D4916A527A8556387B /* Pods-twitchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitchTests/Pods-twitchTests.release.xcconfig"; sourceTree = "<group>"; };
 		610C85411EC30B56003874CA /* twitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610C85441EC30B56003874CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		610C85461EC30B56003874CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		610C85491EC30B56003874CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		610C85461EC30B56003874CA /* TopGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewController.swift; sourceTree = "<group>"; };
 		610C854B1EC30B56003874CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610C854E1EC30B56003874CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		610C85501EC30B56003874CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +69,30 @@
 		610C85601EC30B56003874CA /* twitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610C85641EC30B56003874CA /* twitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitchUITests.swift; sourceTree = "<group>"; };
 		610C85661EC30B56003874CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610C85721EC31998003874CA /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		613D9F961EDAF336002C3841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInforamtion.swift; sourceTree = "<group>"; };
+		6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGamesInfo.swift; sourceTree = "<group>"; };
+		6168E5B41ED6DA5F006D3175 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		6168E5B81ED6DBB8006D3175 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		6168E5BA1ED6FF90006D3175 /* GameStreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStreamsViewController.swift; sourceTree = "<group>"; };
+		6168E5BE1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopGamesStreamTableViewCell.swift; sourceTree = "<group>"; };
+		6168E5C01ED702E8006D3175 /* ApiStreamsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiStreamsInfo.swift; sourceTree = "<group>"; };
+		6168E5C21ED71BD4006D3175 /* GameStreams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStreams.swift; sourceTree = "<group>"; };
+		6168E5C41ED71F4C006D3175 /* StreamInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamInformation.swift; sourceTree = "<group>"; };
+		617B46FA1EC98A9D008F8314 /* GamesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesCollectionViewCell.swift; sourceTree = "<group>"; };
+		617B47011ED44B05008F8314 /* twitch_logo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitch_logo3.jpg; sourceTree = "<group>"; };
+		617B47031ED44B95008F8314 /* TwitchInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchInfo.swift; sourceTree = "<group>"; };
+		617B47061ED44FBB008F8314 /* TopGames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopGames.swift; sourceTree = "<group>"; };
+		61D26CF01ED8448800F10E93 /* TopStreams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStreams.swift; sourceTree = "<group>"; };
+		61D26CF31ED8456600F10E93 /* TopStreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStreamsViewController.swift; sourceTree = "<group>"; };
+		61DF49761ED826A5001971DA /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		718E6C45DD6E8B70F9D6A43B /* Pods-twitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitch/Pods-twitch.release.xcconfig"; sourceTree = "<group>"; };
+		81CF346A9E766AC80E8BBB76 /* Pods_twitchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twitchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1ADC041131788AA0EC41F8B /* Pods-twitchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twitchTests/Pods-twitchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E41DB4902637CFD079A94C99 /* Pods_twitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F336D25EFE3A52BCB9C92773 /* Pods-twitchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twitchUITests/Pods-twitchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F56557456BBEBC377489FD8F /* Pods-twitchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitchUITests/Pods-twitchUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1D7F69A1E9E40A2CFEA6EC /* Pods_twitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B030B17372DF3C827DB83B60 /* Pods_twitchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +116,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9AE4520056F72B73B6A175 /* Pods_twitchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36017E19ABD16DE86B80D877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41DB4902637CFD079A94C99 /* Pods_twitch.framework */,
+				81CF346A9E766AC80E8BBB76 /* Pods_twitchTests.framework */,
+				4525BC9ECCF70CAC93F7468B /* Pods_twitchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		610C85381EC30B56003874CA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +140,8 @@
 				610C85581EC30B56003874CA /* twitchTests */,
 				610C85631EC30B56003874CA /* twitchUITests */,
 				610C85421EC30B56003874CA /* Products */,
+				F76798A72BF03EAB2BD251E4 /* Pods */,
+				36017E19ABD16DE86B80D877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +158,12 @@
 		610C85431EC30B56003874CA /* twitch */ = {
 			isa = PBXGroup;
 			children = (
+				617B47051ED44BAA008F8314 /* images */,
+				617B47001ED419CD008F8314 /* view */,
+				617B46FF1ED419C7008F8314 /* presenter */,
+				617B46FE1ED419B0008F8314 /* model */,
 				610C85441EC30B56003874CA /* AppDelegate.swift */,
-				610C85461EC30B56003874CA /* ViewController.swift */,
-				610C85481EC30B56003874CA /* Main.storyboard */,
+				613D9F951EDAF336002C3841 /* Main.storyboard */,
 				610C854B1EC30B56003874CA /* Assets.xcassets */,
 				610C854D1EC30B56003874CA /* LaunchScreen.storyboard */,
 				610C85501EC30B56003874CA /* Info.plist */,
@@ -125,6 +189,97 @@
 			path = twitchUITests;
 			sourceTree = "<group>";
 		};
+		6168E5B31ED6DA22006D3175 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				6168E5B41ED6DA5F006D3175 /* MenuTableViewController.swift */,
+				6168E5B81ED6DBB8006D3175 /* MenuTableViewCell.swift */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		6168E5BC1ED6FF96006D3175 /* topGames */ = {
+			isa = PBXGroup;
+			children = (
+				610C85461EC30B56003874CA /* TopGamesViewController.swift */,
+				617B46FA1EC98A9D008F8314 /* GamesCollectionViewCell.swift */,
+			);
+			name = topGames;
+			sourceTree = "<group>";
+		};
+		6168E5BD1ED6FFAB006D3175 /* topGameStreams */ = {
+			isa = PBXGroup;
+			children = (
+				6168E5BA1ED6FF90006D3175 /* GameStreamsViewController.swift */,
+				6168E5BE1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift */,
+			);
+			name = topGameStreams;
+			sourceTree = "<group>";
+		};
+		617B46FE1ED419B0008F8314 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				617B47031ED44B95008F8314 /* TwitchInfo.swift */,
+				6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */,
+				6168E5C01ED702E8006D3175 /* ApiStreamsInfo.swift */,
+				6168E5C41ED71F4C006D3175 /* StreamInformation.swift */,
+				613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		617B46FF1ED419C7008F8314 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				617B47061ED44FBB008F8314 /* TopGames.swift */,
+				6168E5C21ED71BD4006D3175 /* GameStreams.swift */,
+				61D26CF01ED8448800F10E93 /* TopStreams.swift */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		617B47001ED419CD008F8314 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6168E5B31ED6DA22006D3175 /* menu */,
+				6168E5BC1ED6FF96006D3175 /* topGames */,
+				6168E5BD1ED6FFAB006D3175 /* topGameStreams */,
+				61D26CF21ED8454D00F10E93 /* topStreams */,
+				61DF49761ED826A5001971DA /* StreamViewController.swift */,
+				610C85721EC31998003874CA /* Authentication.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		617B47051ED44BAA008F8314 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				617B47011ED44B05008F8314 /* twitch_logo3.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		61D26CF21ED8454D00F10E93 /* topStreams */ = {
+			isa = PBXGroup;
+			children = (
+				61D26CF31ED8456600F10E93 /* TopStreamsViewController.swift */,
+			);
+			name = topStreams;
+			sourceTree = "<group>";
+		};
+		F76798A72BF03EAB2BD251E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E9764E9269BBC9C36C2ABBC /* Pods-twitch.debug.xcconfig */,
+				718E6C45DD6E8B70F9D6A43B /* Pods-twitch.release.xcconfig */,
+				E1ADC041131788AA0EC41F8B /* Pods-twitchTests.debug.xcconfig */,
+				5778F6D4916A527A8556387B /* Pods-twitchTests.release.xcconfig */,
+				F336D25EFE3A52BCB9C92773 /* Pods-twitchUITests.debug.xcconfig */,
+				F56557456BBEBC377489FD8F /* Pods-twitchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610C85691EC30B56003874CA /* Build configuration list for PBXNativeTarget "twitch" */;
 			buildPhases = (
+				9CD0996DBC79B0FDC72196DA /* [CP] Check Pods Manifest.lock */,
 				610C853D1EC30B56003874CA /* Sources */,
 				610C853E1EC30B56003874CA /* Frameworks */,
 				610C853F1EC30B56003874CA /* Resources */,
+				3A07E41BE867337AE250672B /* [CP] Embed Pods Frameworks */,
+				B1AAB3B407200D6ECC4E396B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610C856C1EC30B56003874CA /* Build configuration list for PBXNativeTarget "twitchTests" */;
 			buildPhases = (
+				7CBD331E9A7C06A3A00D7CC5 /* [CP] Check Pods Manifest.lock */,
 				610C85511EC30B56003874CA /* Sources */,
 				610C85521EC30B56003874CA /* Frameworks */,
 				610C85531EC30B56003874CA /* Resources */,
+				DEE3924E2FB3C168599B6C89 /* [CP] Embed Pods Frameworks */,
+				29113E79695F614A2AB186E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610C856F1EC30B56003874CA /* Build configuration list for PBXNativeTarget "twitchUITests" */;
 			buildPhases = (
+				232346817436CAF215A0147A /* [CP] Check Pods Manifest.lock */,
 				610C855C1EC30B56003874CA /* Sources */,
 				610C855D1EC30B56003874CA /* Frameworks */,
 				610C855E1EC30B56003874CA /* Resources */,
+				3909C9F9F35054DA47C381F3 /* [CP] Embed Pods Frameworks */,
+				42E20ADAF1CD1E7D655B28A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,8 +397,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				610C854F1EC30B56003874CA /* LaunchScreen.storyboard in Resources */,
+				613D9F971EDAF336002C3841 /* Main.storyboard in Resources */,
+				617B47021ED44B05008F8314 /* twitch_logo3.jpg in Resources */,
 				610C854C1EC30B56003874CA /* Assets.xcassets in Resources */,
-				610C854A1EC30B56003874CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +419,167 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		232346817436CAF215A0147A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29113E79695F614A2AB186E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitchTests/Pods-twitchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3909C9F9F35054DA47C381F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitchUITests/Pods-twitchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A07E41BE867337AE250672B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitch/Pods-twitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42E20ADAF1CD1E7D655B28A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitchUITests/Pods-twitchUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CBD331E9A7C06A3A00D7CC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD0996DBC79B0FDC72196DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1AAB3B407200D6ECC4E396B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitch/Pods-twitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE3924E2FB3C168599B6C89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitchTests/Pods-twitchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		610C853D1EC30B56003874CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610C85471EC30B56003874CA /* ViewController.swift in Sources */,
+				61DF49771ED826A5001971DA /* StreamViewController.swift in Sources */,
+				6168E5C11ED702E8006D3175 /* ApiStreamsInfo.swift in Sources */,
+				617B47041ED44B95008F8314 /* TwitchInfo.swift in Sources */,
+				610C85471EC30B56003874CA /* TopGamesViewController.swift in Sources */,
 				610C85451EC30B56003874CA /* AppDelegate.swift in Sources */,
+				6168E5B21ED6D525006D3175 /* ApiGamesInfo.swift in Sources */,
+				6168E5C31ED71BD4006D3175 /* GameStreams.swift in Sources */,
+				61D26CF11ED8448800F10E93 /* TopStreams.swift in Sources */,
+				6168E5C51ED71F4C006D3175 /* StreamInformation.swift in Sources */,
+				6168E5B91ED6DBB8006D3175 /* MenuTableViewCell.swift in Sources */,
+				61D26CF41ED8456600F10E93 /* TopStreamsViewController.swift in Sources */,
+				610C85731EC31998003874CA /* Authentication.swift in Sources */,
+				6168E5B51ED6DA5F006D3175 /* MenuTableViewController.swift in Sources */,
+				6168E5BB1ED6FF90006D3175 /* GameStreamsViewController.swift in Sources */,
+				617B46FB1EC98A9D008F8314 /* GamesCollectionViewCell.swift in Sources */,
+				6168E5BF1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift in Sources */,
+				613D9F991EDB0D9E002C3841 /* GameInforamtion.swift in Sources */,
+				617B47071ED44FBB008F8314 /* TopGames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +615,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		610C85481EC30B56003874CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				610C85491EC30B56003874CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		610C854D1EC30B56003874CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				610C854E1EC30B56003874CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		613D9F951EDAF336002C3841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613D9F961EDAF336002C3841 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +731,7 @@
 		};
 		610C856A1EC30B56003874CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9764E9269BBC9C36C2ABBC /* Pods-twitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = twitch/Info.plist;
@@ -424,6 +744,7 @@
 		};
 		610C856B1EC30B56003874CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718E6C45DD6E8B70F9D6A43B /* Pods-twitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = twitch/Info.plist;
@@ -436,6 +757,7 @@
 		};
 		610C856D1EC30B56003874CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1ADC041131788AA0EC41F8B /* Pods-twitchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +772,7 @@
 		};
 		610C856E1EC30B56003874CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5778F6D4916A527A8556387B /* Pods-twitchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +787,7 @@
 		};
 		610C85701EC30B56003874CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F336D25EFE3A52BCB9C92773 /* Pods-twitchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = twitchUITests/Info.plist;
@@ -477,6 +801,7 @@
 		};
 		610C85711EC30B56003874CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56557456BBEBC377489FD8F /* Pods-twitchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = twitchUITests/Info.plist;
@@ -507,6 +832,7 @@
 				610C856B1EC30B56003874CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610C856C1EC30B56003874CA /* Build configuration list for PBXNativeTarget "twitchTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +841,7 @@
 				610C856E1EC30B56003874CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610C856F1EC30B56003874CA /* Build configuration list for PBXNativeTarget "twitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +850,7 @@
 				610C85711EC30B56003874CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
