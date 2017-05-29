@@ -10,6 +10,8 @@ import UIKit
 import SideMenu
 
 class MenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    //TODO: switch
     
     let menuItems = ["Games", "Streams"]
     @IBOutlet weak var menuTableView: UITableView!
