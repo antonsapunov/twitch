@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  twitch
+
+  Created by Антон Сапунов on 29.05.17.
+  Copyright © 2017 Антон Сапунов. All rights reserved.
+*/
+
+"Top Games" = "Топ игры";
+"Games" = "Игры";
+"Streams" = "Стримы";
+"Top Streams" = "Топ стримы";
+"Menu" = "Меню";
+"Login" = "Войти";
+"users are watching now" = "пользователей смотрят сейчас";

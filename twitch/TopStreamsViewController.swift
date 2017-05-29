@@ -25,7 +25,7 @@ class TopStreamsViewController: UIViewController, UITableViewDataSource, UITable
         presenter.view = self
         self.topStreamsTableView.delegate = self
         self.topStreamsTableView.dataSource = self
-        self.navigationItem.title = "Top Streams"
+        self.navigationItem.title = NSLocalizedString("Top Streams", comment: "")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,7 +50,7 @@ class TopStreamsViewController: UIViewController, UITableViewDataSource, UITable
         cell.streamImage.image = UIImage(data: (streams?.imageData[indexPath.row])!)
         cell.userName.text = "\((streams?.name[indexPath.row])!) (\((streams?.game[indexPath.row])!))"
         cell.userStatus.text = streams?.status[indexPath.row]
-        cell.audienceNumber.text = "\((streams?.viewers[indexPath.row])!) users are watching now"
+        cell.audienceNumber.text = "\((streams?.viewers[indexPath.row])!)" + NSLocalizedString("users are watching now", comment: "")
         cell.streamImage.isUserInteractionEnabled = true
         let gesture = UITapGestureRecognizer.init(target: self, action: #selector(openStream(sender:)))
         cell.streamImage.addGestureRecognizer(gesture)

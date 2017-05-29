@@ -25,7 +25,7 @@ class TopGamesViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.presenter.view = self
         self.gamesCollectionView.delegate = self
         self.gamesCollectionView.dataSource = self
-        self.navigationItem.title = "Top Games"
+        self.navigationItem.title = NSLocalizedString("Top Games", comment: "")
         
         let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "UISideMenuNavigationController") as! UISideMenuNavigationController
         SideMenuManager.menuRightNavigationController = menuRightNavigationController

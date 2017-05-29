@@ -15,6 +15,7 @@
 		610C855A1EC30B56003874CA /* twitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85591EC30B56003874CA /* twitchTests.swift */; };
 		610C85651EC30B56003874CA /* twitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85641EC30B56003874CA /* twitchUITests.swift */; };
 		610C85731EC31998003874CA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85721EC31998003874CA /* Authentication.swift */; };
+		610F4B251EDC3EA600CC6643 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 610F4B271EDC3EA600CC6643 /* Localizable.strings */; };
 		613D9F971EDAF336002C3841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613D9F951EDAF336002C3841 /* Main.storyboard */; };
 		613D9F991EDB0D9E002C3841 /* GameInforamtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */; };
 		6168E5B21ED6D525006D3175 /* ApiGamesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */; };
@@ -70,6 +71,11 @@
 		610C85641EC30B56003874CA /* twitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitchUITests.swift; sourceTree = "<group>"; };
 		610C85661EC30B56003874CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610C85721EC31998003874CA /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		610F4B1E1EDC3DF500CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
+		610F4B1F1EDC3DF500CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		610F4B211EDC3E6300CC6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		610F4B261EDC3EA600CC6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		610F4B281EDC3EA900CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		613D9F961EDAF336002C3841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInforamtion.swift; sourceTree = "<group>"; };
 		6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGamesInfo.swift; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 				610C854B1EC30B56003874CA /* Assets.xcassets */,
 				610C854D1EC30B56003874CA /* LaunchScreen.storyboard */,
 				610C85501EC30B56003874CA /* Info.plist */,
+				610F4B271EDC3EA600CC6643 /* Localizable.strings */,
 			);
 			path = twitch;
 			sourceTree = "<group>";
@@ -378,6 +385,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 610C85381EC30B56003874CA;
 			productRefGroup = 610C85421EC30B56003874CA /* Products */;
@@ -396,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610F4B251EDC3EA600CC6643 /* Localizable.strings in Resources */,
 				610C854F1EC30B56003874CA /* LaunchScreen.storyboard in Resources */,
 				613D9F971EDAF336002C3841 /* Main.storyboard in Resources */,
 				617B47021ED44B05008F8314 /* twitch_logo3.jpg in Resources */,
@@ -619,14 +628,26 @@
 			isa = PBXVariantGroup;
 			children = (
 				610C854E1EC30B56003874CA /* Base */,
+				610F4B1F1EDC3DF500CC6643 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		610F4B271EDC3EA600CC6643 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				610F4B261EDC3EA600CC6643 /* en */,
+				610F4B281EDC3EA900CC6643 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		613D9F951EDAF336002C3841 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				613D9F961EDAF336002C3841 /* Base */,
+				610F4B1E1EDC3DF500CC6643 /* ru */,
+				610F4B211EDC3E6300CC6643 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -638,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -689,6 +711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

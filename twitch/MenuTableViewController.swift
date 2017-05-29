@@ -11,16 +11,19 @@ import SideMenu
 
 class MenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let menuItems = ["Games", "Streams"]
+    let menuItems = [NSLocalizedString("Games", comment: ""),  NSLocalizedString("Streams", comment: "")]
     @IBOutlet weak var menuTableView: UITableView!
+    
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.menuTableView.delegate = self
         self.menuTableView.dataSource = self
-        self.navigationItem.title = "Menu"
+        self.navigationItem.title = NSLocalizedString("Menu", comment: "")
+        self.loginButton.setTitle(NSLocalizedString("Login", comment: ""), for: .normal)
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count
     }
