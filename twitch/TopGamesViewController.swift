@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class TopGamesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -24,6 +25,13 @@ class TopGamesViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.presenter.view = self
         self.gamesCollectionView.delegate = self
         self.gamesCollectionView.dataSource = self
+        self.navigationItem.title = "Top Games"
+        
+        let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "UISideMenuNavigationController") as! UISideMenuNavigationController
+        SideMenuManager.menuRightNavigationController = menuRightNavigationController
+        SideMenuManager.menuWidth = 250
+        SideMenuManager.menuPushStyle = .popWhenPossible
+        SideMenuManager.menuPresentMode = .menuSlideIn
     }
     override func viewWillAppear(_ animated: Bool) {
         self.presenter.getGamesInfo()

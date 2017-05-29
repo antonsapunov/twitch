@@ -63,6 +63,7 @@ class TopStreamsViewController: UIViewController, UITableViewDataSource, UITable
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let Stream = storyboard.instantiateViewController(withIdentifier: "StreamViewController") as! StreamViewController
         Stream.streamUrl = streams?.url[indexPath.row]
+        Stream.streamName = streams?.name[indexPath.row]
         self.navigationController?.pushViewController(Stream, animated: true)
     }
 

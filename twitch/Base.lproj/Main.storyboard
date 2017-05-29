@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Games-->
+        <!--Top Games View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="TopGamesViewController" id="BYZ-38-t0r" customClass="TopGamesViewController" customModule="twitch" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                             <constraint firstItem="Iwq-wG-CNp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXv-OV-dBE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Top Games" id="uVB-So-mQM">
+                    <navigationItem key="navigationItem" id="uVB-So-mQM">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="6Jj-cg-BxI">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xrB-wz-Yuh">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
@@ -180,6 +180,18 @@
                             <constraint firstItem="cgA-83-U7l" firstAttribute="centerY" secondItem="IYK-Na-cek" secondAttribute="centerY" id="uFe-uz-oRQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SA0-eh-Km1">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="APT-VS-9OK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C2M-Ia-tt9">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="=="/>
+                                <connections>
+                                    <segue destination="6Nb-ZE-tIl" kind="presentation" id="2fM-wi-exo"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="4K4-eY-yXL" id="4gi-sI-4kT"/>
                         <outlet property="topStreamsTableView" destination="cgA-83-U7l" id="UKK-0t-OVz"/>
@@ -276,7 +288,18 @@
                             <constraint firstItem="azE-Pm-6d2" firstAttribute="centerY" secondItem="Jeh-54-UI8" secondAttribute="centerY" id="xXJ-kN-CNm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ghi-mZ-zgf"/>
+                    <navigationItem key="navigationItem" id="Ghi-mZ-zgf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="lgP-TZ-Gxe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0hH-zx-LUf">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="=="/>
+                                <connections>
+                                    <segue destination="6Nb-ZE-tIl" kind="presentation" id="2OR-in-nVQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="azE-Pm-6d2" id="3bE-F4-zhJ"/>
                         <outlet property="streamsTableView" destination="GlT-Ua-lG2" id="k04-Wc-Niw"/>
@@ -319,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="5162" y="139"/>
         </scene>
-        <!--Menu-->
+        <!--Menu Table View Controller-->
         <scene sceneID="0ad-AY-bK2">
             <objects>
-                <viewController id="OwM-CC-XkS" customClass="MenuTableViewController" customModule="twitch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuTableViewController" id="OwM-CC-XkS" customClass="MenuTableViewController" customModule="twitch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UiF-S5-jIe"/>
                         <viewControllerLayoutGuide type="bottom" id="Ped-eB-Vjj"/>
@@ -342,13 +365,13 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vGl-0l-piQ" id="B7m-Yt-P2h">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7y-2c-hEw">
-                                                    <rect key="frame" x="8" y="-1" width="294" height="44"/>
+                                                    <rect key="frame" x="8" y="-1" width="250" height="44"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="294" id="EPj-bX-Vev"/>
+                                                        <constraint firstAttribute="width" constant="250" id="4H0-Y8-JOe"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Button"/>
@@ -386,7 +409,7 @@
                             <constraint firstItem="czx-yY-txH" firstAttribute="centerX" secondItem="Faz-KO-gmM" secondAttribute="centerX" id="ykm-bz-owG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="MdB-8s-mh8"/>
+                    <navigationItem key="navigationItem" id="MdB-8s-mh8"/>
                     <connections>
                         <outlet property="menuTableView" destination="czx-yY-txH" id="Lk2-4l-ww9"/>
                     </connections>
@@ -449,7 +472,7 @@
         <!--Side Menu Navigation Controller-->
         <scene sceneID="m9U-Fp-ncP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Nb-ZE-tIl" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UISideMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="6Nb-ZE-tIl" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cGQ-nP-xM5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -468,4 +491,7 @@
             <point key="canvasLocation" x="2858" y="-655"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2fM-wi-exo"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -18,6 +18,7 @@ class MenuTableViewController: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         self.menuTableView.delegate = self
         self.menuTableView.dataSource = self
+        self.navigationItem.title = "Menu"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
