@@ -16,21 +16,33 @@
 		610C85651EC30B56003874CA /* twitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85641EC30B56003874CA /* twitchUITests.swift */; };
 		610C85731EC31998003874CA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C85721EC31998003874CA /* Authentication.swift */; };
 		610F4B251EDC3EA600CC6643 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 610F4B271EDC3EA600CC6643 /* Localizable.strings */; };
+		610F4B2C1EDC4B6F00CC6643 /* SearchStreamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B2B1EDC4B6F00CC6643 /* SearchStreamsPresenter.swift */; };
+		610F4B2F1EDDA32A00CC6643 /* TopGamesDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B2E1EDDA32A00CC6643 /* TopGamesDataSourse.swift */; };
+		610F4B311EDDB71500CC6643 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B301EDDB71500CC6643 /* Game.swift */; };
+		610F4B331EDDB75C00CC6643 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B321EDDB75C00CC6643 /* GameInfo.swift */; };
+		610F4B351EDDB78E00CC6643 /* BoxVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B341EDDB78E00CC6643 /* BoxVariables.swift */; };
+		610F4B381EDDB7F500CC6643 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B371EDDB7F500CC6643 /* Stream.swift */; };
+		610F4B3A1EDDB82100CC6643 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B391EDDB82100CC6643 /* Preview.swift */; };
+		610F4B3C1EDDB85100CC6643 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B3B1EDDB85100CC6643 /* Channel.swift */; };
+		610F4B411EDEA98200CC6643 /* StreamDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B401EDEA98200CC6643 /* StreamDataSourse.swift */; };
+		610F4B431EDEAAE400CC6643 /* OpenViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B421EDEAAE400CC6643 /* OpenViewDelegate.swift */; };
+		610F4B461EDEAFA400CC6643 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B451EDEAFA400CC6643 /* StringConstants.swift */; };
+		610F4B481EDEC2AF00CC6643 /* MenuTableDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F4B471EDEC2AF00CC6643 /* MenuTableDataSourse.swift */; };
 		613D9F971EDAF336002C3841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613D9F951EDAF336002C3841 /* Main.storyboard */; };
 		613D9F991EDB0D9E002C3841 /* GameInforamtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */; };
-		6168E5B21ED6D525006D3175 /* ApiGamesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */; };
-		6168E5B51ED6DA5F006D3175 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B41ED6DA5F006D3175 /* MenuTableViewController.swift */; };
+		6168E5B21ED6D525006D3175 /* ApiGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B11ED6D525006D3175 /* ApiGames.swift */; };
+		6168E5B51ED6DA5F006D3175 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B41ED6DA5F006D3175 /* MenuViewController.swift */; };
 		6168E5B91ED6DBB8006D3175 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5B81ED6DBB8006D3175 /* MenuTableViewCell.swift */; };
 		6168E5BB1ED6FF90006D3175 /* GameStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5BA1ED6FF90006D3175 /* GameStreamsViewController.swift */; };
-		6168E5BF1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5BE1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift */; };
-		6168E5C11ED702E8006D3175 /* ApiStreamsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C01ED702E8006D3175 /* ApiStreamsInfo.swift */; };
-		6168E5C31ED71BD4006D3175 /* GameStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C21ED71BD4006D3175 /* GameStreams.swift */; };
+		6168E5BF1ED6FFFD006D3175 /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5BE1ED6FFFD006D3175 /* StreamTableViewCell.swift */; };
+		6168E5C11ED702E8006D3175 /* ApiStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C01ED702E8006D3175 /* ApiStreams.swift */; };
+		6168E5C31ED71BD4006D3175 /* GameStreamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C21ED71BD4006D3175 /* GameStreamsPresenter.swift */; };
 		6168E5C51ED71F4C006D3175 /* StreamInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168E5C41ED71F4C006D3175 /* StreamInformation.swift */; };
 		617B46FB1EC98A9D008F8314 /* GamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B46FA1EC98A9D008F8314 /* GamesCollectionViewCell.swift */; };
 		617B47021ED44B05008F8314 /* twitch_logo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617B47011ED44B05008F8314 /* twitch_logo3.jpg */; };
-		617B47041ED44B95008F8314 /* TwitchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B47031ED44B95008F8314 /* TwitchInfo.swift */; };
-		617B47071ED44FBB008F8314 /* TopGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B47061ED44FBB008F8314 /* TopGames.swift */; };
-		61D26CF11ED8448800F10E93 /* TopStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D26CF01ED8448800F10E93 /* TopStreams.swift */; };
+		617B47041ED44B95008F8314 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B47031ED44B95008F8314 /* ApiRequest.swift */; };
+		617B47071ED44FBB008F8314 /* TopGamesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B47061ED44FBB008F8314 /* TopGamesPresenter.swift */; };
+		61D26CF11ED8448800F10E93 /* TopStreamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D26CF01ED8448800F10E93 /* TopStreamsPresenter.swift */; };
 		61D26CF41ED8456600F10E93 /* TopStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D26CF31ED8456600F10E93 /* TopStreamsViewController.swift */; };
 		61DF49771ED826A5001971DA /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF49761ED826A5001971DA /* StreamViewController.swift */; };
 		B030B17372DF3C827DB83B60 /* Pods_twitchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CF346A9E766AC80E8BBB76 /* Pods_twitchTests.framework */; };
@@ -71,26 +83,38 @@
 		610C85641EC30B56003874CA /* twitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitchUITests.swift; sourceTree = "<group>"; };
 		610C85661EC30B56003874CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610C85721EC31998003874CA /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
-		610F4B1E1EDC3DF500CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
 		610F4B1F1EDC3DF500CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		610F4B211EDC3E6300CC6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		610F4B261EDC3EA600CC6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		610F4B281EDC3EA900CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		610F4B2B1EDC4B6F00CC6643 /* SearchStreamsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStreamsPresenter.swift; sourceTree = "<group>"; };
+		610F4B2D1EDD718900CC6643 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		610F4B2E1EDDA32A00CC6643 /* TopGamesDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopGamesDataSourse.swift; sourceTree = "<group>"; };
+		610F4B301EDDB71500CC6643 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		610F4B321EDDB75C00CC6643 /* GameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
+		610F4B341EDDB78E00CC6643 /* BoxVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxVariables.swift; sourceTree = "<group>"; };
+		610F4B371EDDB7F500CC6643 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		610F4B391EDDB82100CC6643 /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		610F4B3B1EDDB85100CC6643 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		610F4B401EDEA98200CC6643 /* StreamDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDataSourse.swift; sourceTree = "<group>"; };
+		610F4B421EDEAAE400CC6643 /* OpenViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenViewDelegate.swift; sourceTree = "<group>"; };
+		610F4B451EDEAFA400CC6643 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		610F4B471EDEC2AF00CC6643 /* MenuTableDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDataSourse.swift; sourceTree = "<group>"; };
 		613D9F961EDAF336002C3841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInforamtion.swift; sourceTree = "<group>"; };
-		6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGamesInfo.swift; sourceTree = "<group>"; };
-		6168E5B41ED6DA5F006D3175 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		6168E5B11ED6D525006D3175 /* ApiGames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGames.swift; sourceTree = "<group>"; };
+		6168E5B41ED6DA5F006D3175 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6168E5B81ED6DBB8006D3175 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		6168E5BA1ED6FF90006D3175 /* GameStreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStreamsViewController.swift; sourceTree = "<group>"; };
-		6168E5BE1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopGamesStreamTableViewCell.swift; sourceTree = "<group>"; };
-		6168E5C01ED702E8006D3175 /* ApiStreamsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiStreamsInfo.swift; sourceTree = "<group>"; };
-		6168E5C21ED71BD4006D3175 /* GameStreams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStreams.swift; sourceTree = "<group>"; };
+		6168E5BE1ED6FFFD006D3175 /* StreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
+		6168E5C01ED702E8006D3175 /* ApiStreams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiStreams.swift; sourceTree = "<group>"; };
+		6168E5C21ED71BD4006D3175 /* GameStreamsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStreamsPresenter.swift; sourceTree = "<group>"; };
 		6168E5C41ED71F4C006D3175 /* StreamInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamInformation.swift; sourceTree = "<group>"; };
 		617B46FA1EC98A9D008F8314 /* GamesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesCollectionViewCell.swift; sourceTree = "<group>"; };
 		617B47011ED44B05008F8314 /* twitch_logo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitch_logo3.jpg; sourceTree = "<group>"; };
-		617B47031ED44B95008F8314 /* TwitchInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchInfo.swift; sourceTree = "<group>"; };
-		617B47061ED44FBB008F8314 /* TopGames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopGames.swift; sourceTree = "<group>"; };
-		61D26CF01ED8448800F10E93 /* TopStreams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStreams.swift; sourceTree = "<group>"; };
+		617B47031ED44B95008F8314 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		617B47061ED44FBB008F8314 /* TopGamesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopGamesPresenter.swift; sourceTree = "<group>"; };
+		61D26CF01ED8448800F10E93 /* TopStreamsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStreamsPresenter.swift; sourceTree = "<group>"; };
 		61D26CF31ED8456600F10E93 /* TopStreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStreamsViewController.swift; sourceTree = "<group>"; };
 		61DF49761ED826A5001971DA /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		718E6C45DD6E8B70F9D6A43B /* Pods-twitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitch/Pods-twitch.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +192,8 @@
 				617B47001ED419CD008F8314 /* view */,
 				617B46FF1ED419C7008F8314 /* presenter */,
 				617B46FE1ED419B0008F8314 /* model */,
+				617B47031ED44B95008F8314 /* ApiRequest.swift */,
+				610F4B451EDEAFA400CC6643 /* StringConstants.swift */,
 				610C85441EC30B56003874CA /* AppDelegate.swift */,
 				613D9F951EDAF336002C3841 /* Main.storyboard */,
 				610C854B1EC30B56003874CA /* Assets.xcassets */,
@@ -196,10 +222,44 @@
 			path = twitchUITests;
 			sourceTree = "<group>";
 		};
+		610F4B361EDDB7C700CC6643 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				6168E5B11ED6D525006D3175 /* ApiGames.swift */,
+				610F4B301EDDB71500CC6643 /* Game.swift */,
+				610F4B321EDDB75C00CC6643 /* GameInfo.swift */,
+				610F4B341EDDB78E00CC6643 /* BoxVariables.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		610F4B3D1EDDB88000CC6643 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				6168E5C01ED702E8006D3175 /* ApiStreams.swift */,
+				610F4B371EDDB7F500CC6643 /* Stream.swift */,
+				610F4B391EDDB82100CC6643 /* Preview.swift */,
+				610F4B3B1EDDB85100CC6643 /* Channel.swift */,
+			);
+			name = Stream;
+			sourceTree = "<group>";
+		};
+		610F4B441EDEADC700CC6643 /* streams */ = {
+			isa = PBXGroup;
+			children = (
+				6168E5BD1ED6FFAB006D3175 /* topGameStreams */,
+				61D26CF21ED8454D00F10E93 /* topStreams */,
+				610F4B401EDEA98200CC6643 /* StreamDataSourse.swift */,
+				6168E5BE1ED6FFFD006D3175 /* StreamTableViewCell.swift */,
+			);
+			name = streams;
+			sourceTree = "<group>";
+		};
 		6168E5B31ED6DA22006D3175 /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				6168E5B41ED6DA5F006D3175 /* MenuTableViewController.swift */,
+				6168E5B41ED6DA5F006D3175 /* MenuViewController.swift */,
+				610F4B471EDEC2AF00CC6643 /* MenuTableDataSourse.swift */,
 				6168E5B81ED6DBB8006D3175 /* MenuTableViewCell.swift */,
 			);
 			name = menu;
@@ -209,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				610C85461EC30B56003874CA /* TopGamesViewController.swift */,
+				610F4B2E1EDDA32A00CC6643 /* TopGamesDataSourse.swift */,
 				617B46FA1EC98A9D008F8314 /* GamesCollectionViewCell.swift */,
 			);
 			name = topGames;
@@ -218,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				6168E5BA1ED6FF90006D3175 /* GameStreamsViewController.swift */,
-				6168E5BE1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift */,
 			);
 			name = topGameStreams;
 			sourceTree = "<group>";
@@ -226,9 +286,8 @@
 		617B46FE1ED419B0008F8314 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				617B47031ED44B95008F8314 /* TwitchInfo.swift */,
-				6168E5B11ED6D525006D3175 /* ApiGamesInfo.swift */,
-				6168E5C01ED702E8006D3175 /* ApiStreamsInfo.swift */,
+				610F4B361EDDB7C700CC6643 /* Game */,
+				610F4B3D1EDDB88000CC6643 /* Stream */,
 				6168E5C41ED71F4C006D3175 /* StreamInformation.swift */,
 				613D9F981EDB0D9E002C3841 /* GameInforamtion.swift */,
 			);
@@ -238,9 +297,10 @@
 		617B46FF1ED419C7008F8314 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
-				617B47061ED44FBB008F8314 /* TopGames.swift */,
-				6168E5C21ED71BD4006D3175 /* GameStreams.swift */,
-				61D26CF01ED8448800F10E93 /* TopStreams.swift */,
+				617B47061ED44FBB008F8314 /* TopGamesPresenter.swift */,
+				6168E5C21ED71BD4006D3175 /* GameStreamsPresenter.swift */,
+				61D26CF01ED8448800F10E93 /* TopStreamsPresenter.swift */,
+				610F4B2B1EDC4B6F00CC6643 /* SearchStreamsPresenter.swift */,
 			);
 			name = presenter;
 			sourceTree = "<group>";
@@ -250,8 +310,8 @@
 			children = (
 				6168E5B31ED6DA22006D3175 /* menu */,
 				6168E5BC1ED6FF96006D3175 /* topGames */,
-				6168E5BD1ED6FFAB006D3175 /* topGameStreams */,
-				61D26CF21ED8454D00F10E93 /* topStreams */,
+				610F4B441EDEADC700CC6643 /* streams */,
+				610F4B421EDEAAE400CC6643 /* OpenViewDelegate.swift */,
 				61DF49761ED826A5001971DA /* StreamViewController.swift */,
 				610C85721EC31998003874CA /* Authentication.swift */,
 			);
@@ -572,23 +632,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				61DF49771ED826A5001971DA /* StreamViewController.swift in Sources */,
-				6168E5C11ED702E8006D3175 /* ApiStreamsInfo.swift in Sources */,
-				617B47041ED44B95008F8314 /* TwitchInfo.swift in Sources */,
+				6168E5C11ED702E8006D3175 /* ApiStreams.swift in Sources */,
+				610F4B461EDEAFA400CC6643 /* StringConstants.swift in Sources */,
+				610F4B2F1EDDA32A00CC6643 /* TopGamesDataSourse.swift in Sources */,
+				610F4B3C1EDDB85100CC6643 /* Channel.swift in Sources */,
+				617B47041ED44B95008F8314 /* ApiRequest.swift in Sources */,
 				610C85471EC30B56003874CA /* TopGamesViewController.swift in Sources */,
 				610C85451EC30B56003874CA /* AppDelegate.swift in Sources */,
-				6168E5B21ED6D525006D3175 /* ApiGamesInfo.swift in Sources */,
-				6168E5C31ED71BD4006D3175 /* GameStreams.swift in Sources */,
-				61D26CF11ED8448800F10E93 /* TopStreams.swift in Sources */,
+				6168E5B21ED6D525006D3175 /* ApiGames.swift in Sources */,
+				6168E5C31ED71BD4006D3175 /* GameStreamsPresenter.swift in Sources */,
+				610F4B411EDEA98200CC6643 /* StreamDataSourse.swift in Sources */,
+				61D26CF11ED8448800F10E93 /* TopStreamsPresenter.swift in Sources */,
 				6168E5C51ED71F4C006D3175 /* StreamInformation.swift in Sources */,
 				6168E5B91ED6DBB8006D3175 /* MenuTableViewCell.swift in Sources */,
+				610F4B2C1EDC4B6F00CC6643 /* SearchStreamsPresenter.swift in Sources */,
+				610F4B3A1EDDB82100CC6643 /* Preview.swift in Sources */,
 				61D26CF41ED8456600F10E93 /* TopStreamsViewController.swift in Sources */,
 				610C85731EC31998003874CA /* Authentication.swift in Sources */,
-				6168E5B51ED6DA5F006D3175 /* MenuTableViewController.swift in Sources */,
+				6168E5B51ED6DA5F006D3175 /* MenuViewController.swift in Sources */,
 				6168E5BB1ED6FF90006D3175 /* GameStreamsViewController.swift in Sources */,
+				610F4B351EDDB78E00CC6643 /* BoxVariables.swift in Sources */,
+				610F4B431EDEAAE400CC6643 /* OpenViewDelegate.swift in Sources */,
+				610F4B311EDDB71500CC6643 /* Game.swift in Sources */,
 				617B46FB1EC98A9D008F8314 /* GamesCollectionViewCell.swift in Sources */,
-				6168E5BF1ED6FFFD006D3175 /* TopGamesStreamTableViewCell.swift in Sources */,
+				610F4B381EDDB7F500CC6643 /* Stream.swift in Sources */,
+				6168E5BF1ED6FFFD006D3175 /* StreamTableViewCell.swift in Sources */,
+				610F4B331EDDB75C00CC6643 /* GameInfo.swift in Sources */,
 				613D9F991EDB0D9E002C3841 /* GameInforamtion.swift in Sources */,
-				617B47071ED44FBB008F8314 /* TopGames.swift in Sources */,
+				617B47071ED44FBB008F8314 /* TopGamesPresenter.swift in Sources */,
+				610F4B481EDEC2AF00CC6643 /* MenuTableDataSourse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,8 +718,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				613D9F961EDAF336002C3841 /* Base */,
-				610F4B1E1EDC3DF500CC6643 /* ru */,
 				610F4B211EDC3E6300CC6643 /* en */,
+				610F4B2D1EDD718900CC6643 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

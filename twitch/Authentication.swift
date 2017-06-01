@@ -12,11 +12,15 @@ import AVFoundation
 
 class Authentication: UIViewController, UIWebViewDelegate {
 
+    //Outlets
+    
     @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.delegate = self;
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         let url = URL(string: "https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=ui9tucuaxqy3arxbm47ewewtqiknop&redirect_uri=http://localhost")!
         
@@ -34,7 +38,6 @@ class Authentication: UIViewController, UIWebViewDelegate {
             }
             self.navigationController?.popViewController(animated: true)
         }
-        
         return true;
     }
 }

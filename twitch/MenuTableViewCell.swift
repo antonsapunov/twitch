@@ -11,4 +11,5 @@ import UIKit
 class MenuTableViewCell: UITableViewCell {
 
     @IBOutlet weak var menuButton: UIButton!
+
 }

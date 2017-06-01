@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0XS-Zy-y3n"; */
+"0XS-Zy-y3n.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "=="; ObjectID = "0hH-zx-LUf"; */
+"0hH-zx-LUf.normalTitle" = "==";
+
+/* Class = "UIButton"; normalTitle = "=="; ObjectID = "C2M-Ia-tt9"; */
+"C2M-Ia-tt9.normalTitle" = "==";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Faz-KO-gmM"; */
+"Faz-KO-gmM.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HfH-zS-KGA"; */
+"HfH-zS-KGA.text" = "Label";
+
+/* Class = "UISearchBar"; placeholder = "Поиск"; ObjectID = "Xfe-Hr-jU1"; */
+"Xfe-Hr-jU1.placeholder" = "Поиск";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "etN-1Y-hcT"; */
+"etN-1Y-hcT.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "g7y-2c-hEw"; */
+"g7y-2c-hEw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hmi-vW-KM7"; */
+"hmi-vW-KM7.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rsP-xV-ISj"; */
+"rsP-xV-ISj.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "t4x-im-0jL"; */
+"t4x-im-0jL.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "=="; ObjectID = "xrB-wz-Yuh"; */
+"xrB-wz-Yuh.normalTitle" = "==";
