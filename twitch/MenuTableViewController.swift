@@ -11,7 +11,7 @@ import SideMenu
 
 class MenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    //TODO: switch
+    //TODO: создать отдельный объект дата соурс и использовать его в vc
     
     let menuItems = ["Games", "Streams"]
     @IBOutlet weak var menuTableView: UITableView!
