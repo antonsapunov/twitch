@@ -56,8 +56,8 @@ class ApiRequest {
         }
     }
     
-    func getStreamSearchResult(_ searchValue: String, completionHandler: @escaping (ApiStreams?, Error?) -> ()) {
-        Alamofire.request(constans.topStreamsUrl, parameters:
+    func getSearchResult(_ searchValue: String, completionHandler: @escaping (ApiStreams?, Error?) -> ()) {
+        Alamofire.request(constans.searchStreamsUrl, parameters:
             [   constans.searchKey : searchValue,
                 constans.clientKey : constans.clientValue]).responseObject {
                     (response: DataResponse<ApiStreams>) in

@@ -9,18 +9,17 @@
 import UIKit
 import SideMenu
 
-class TopGamesViewController: UIViewController, UISearchControllerDelegate, UISearchBarDelegate, OpenViewDelegate {
+class TopGamesViewController: UIViewController, OpenViewDelegate {
 
     //Outlets
     
     @IBOutlet weak var gamesCollectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    //
+    //Fields
     
     let presenter = TopGamesPresenter()
-    var datasourse = TopGamesDataSourse()
-    var searchController: UISearchController!
+    let datasourse = TopGamesDataSourse()
     var games: GameInformation? {
         didSet {
             datasourse.setGames(games!, self.view)
@@ -39,14 +38,10 @@ class TopGamesViewController: UIViewController, UISearchControllerDelegate, UISe
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 88/255, green: 69/255, blue: 156/255, alpha: 1.0)
         
         sideMenu()
-        searchControllerSetup()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.presenter.getGamesInfo()
-        
-//        self.navigationController?.navigationBar.backgroundColor = UIColor.red
-//        self.searchController.searchBar.becomeFirstResponder()
     }
     
     func openView(_ controller: UIViewController) {
@@ -59,16 +54,6 @@ class TopGamesViewController: UIViewController, UISearchControllerDelegate, UISe
         SideMenuManager.menuWidth = 250
         SideMenuManager.menuPushStyle = .popWhenPossible
         SideMenuManager.menuPresentMode = .menuSlideIn
-    }
-    
-    func searchControllerSetup() {
-        self.searchController = UISearchController(searchResultsController: nil)
-        self.searchController.delegate = self
-        self.searchController.searchBar.delegate = self
-        self.searchController.hidesNavigationBarDuringPresentation = false
-        self.searchController.dimsBackgroundDuringPresentation = true
-//        self.navigationItem.titleView = searchController.searchBar
-        self.definesPresentationContext = true
     }
 }
 

@@ -9,7 +9,7 @@
 import UIKit
 import SideMenu
 
-class MenuViewController: UIViewController, UISearchBarDelegate, OpenViewDelegate{
+class MenuViewController: UIViewController, OpenViewDelegate {
     
     //Outlets
     
@@ -17,10 +17,10 @@ class MenuViewController: UIViewController, UISearchBarDelegate, OpenViewDelegat
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var loginButton: UIButton!
     
-    //
+    //Fields
     
-    var searchController: UISearchController!
-    var datasourse = MenuTableDataSourse()
+    let datasourse = MenuTableDataSourse()
+    var searchBarDelegate = SearchBarDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,21 +28,14 @@ class MenuViewController: UIViewController, UISearchBarDelegate, OpenViewDelegat
         self.menuTableView.delegate = datasourse
         self.menuTableView.dataSource = datasourse
         self.datasourse.topDelegate = self
+        self.searchBarDelegate.searchDelegate = self
         self.navigationItem.title = NSLocalizedString("Menu", comment: "")
         self.loginButton.setTitle(NSLocalizedString("Login", comment: ""), for: .normal)
-        self.searchBar.delegate = self
+        self.searchBar.delegate = searchBarDelegate
     }
     
     func openView(_ controller: UIViewController) {
         self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let TopGames = storyboard.instantiateViewController(withIdentifier: "TopGamesViewController") as! TopGamesViewController
-//        TopGames.navigationItem.titleView = TopGames.searchController.searchBar
-//        TopGames.searchController.searchBar.becomeFirstResponder()
-        openView(TopGames)
     }
     
     @IBAction func loginButton(_ sender: UIButton) {

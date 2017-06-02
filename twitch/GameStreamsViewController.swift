@@ -11,12 +11,13 @@ import UIKit
 class GameStreamsViewController: UIViewController, OpenViewDelegate {
     
     //Outlets
+    
     @IBOutlet weak var streamsTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    //
+    //Fields
     
-    var datasourse = StreamDataSourse()
+    let datasourse = StreamDataSourse()
     let presenter = GameStreamsPresenter()
     var gameValue: String? = nil
     var streams: StreamInformation? {

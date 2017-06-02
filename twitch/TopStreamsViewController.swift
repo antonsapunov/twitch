@@ -15,9 +15,10 @@ class TopStreamsViewController: UIViewController, OpenViewDelegate {
     @IBOutlet weak var topStreamsTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    //
+    //Fields
     
-    var datasourse = StreamDataSourse()
+    let datasourse = StreamDataSourse()
+    let presenter = TopStreamsPresenter()
     var streams: StreamInformation? {
         didSet {
             datasourse.setStreams(streams!)
@@ -25,8 +26,6 @@ class TopStreamsViewController: UIViewController, OpenViewDelegate {
             self.activityIndicator.stopAnimating()
         }
     }
-    
-    let presenter = TopStreamsPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()

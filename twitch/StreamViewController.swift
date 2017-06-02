@@ -14,7 +14,7 @@ class StreamViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var streamWebView: UIWebView!
     
-    //
+    //Fields
     
     var streamUrl: String? = nil
     var streamName: String? = nil

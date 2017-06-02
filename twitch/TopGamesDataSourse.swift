@@ -44,9 +44,10 @@ class TopGamesDataSourse: NSObject, UICollectionViewDelegate, UICollectionViewDa
         let leftRightInset = self.view.frame.size.width / 40.0
         return UIEdgeInsetsMake(0, leftRightInset, 0, leftRightInset)
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let GameStreams = storyboard.instantiateViewController(withIdentifier: "GameStreams") as! GameStreamsViewController
+        let GameStreams = storyboard.instantiateViewController(withIdentifier: "GameStreamsViewController") as! GameStreamsViewController
         GameStreams.gameValue = self.games?.game[indexPath.row]
         if let delegate = self.topDelegate {
             delegate.openView(GameStreams)
